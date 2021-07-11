@@ -1,0 +1,136 @@
+@font-face {
+  font-family: PT-serif;
+  src: url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+}
+
+body {
+  margin: 0px;
+  height: 100vh;
+  width: 100%;
+  font-family: PT-serif;
+}
+
+#content {
+  display: flex;
+  padding: 50px 100px;
+  justify-content: space-around;
+}
+
+#title-page {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#intro {
+  height: 100px;
+  width: 30%;
+}
+
+#title {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Poppins;
+}
+
+#article {
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+#img {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  margin-left: 100px;
+}
+
+.second-pic-1 {
+  margin-top: 100px;
+}
+
+.second-pic-2 {
+  margin-top: 100px;
+}
+
+figure {
+  display: flex;
+}
+
+img {
+  height: 300px;
+}
+
+@media (max-width: 660px) {
+  #content {
+    flex-direction: column;
+    height: 30%;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+
+  #intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .down-pic {
+    margin-top: 100px;
+  }
+
+  .second-pic-2 {
+    margin-top: 0;
+  }
+
+  img{
+    height: 130px;
+  }
+}
+
+figcaption {
+  font-weight: 600;
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+.side-caption {
+  font-family: PT-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  height: fit-content;
+  margin-top: 10px;
+  width: 30px;
+  white-space: nowrap;
+}
+
+footer div {
+  color: #a9a9a9;
+  position: relative;
+  margin-top: 100px;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#username {
+  text-decoration: underline;
+  font-weight: 700;
+}
